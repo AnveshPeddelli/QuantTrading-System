@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.34301.259
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "QuatTrading_SW", "QuatTrading_SW\QuatTrading_SW.vcxproj", "{2BA69C25-0B27-41C8-A7D1-35119C0C99B9}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Trader", "Trader\Trader.vcxproj", "{F4076DF1-1669-4FED-BD7F-9FA4534E2084}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2BA69C25-0B27-41C8-A7D1-35119C0C99B9}.Debug|x64.ActiveCfg = Debug|x64
+		{2BA69C25-0B27-41C8-A7D1-35119C0C99B9}.Debug|x64.Build.0 = Debug|x64
+		{2BA69C25-0B27-41C8-A7D1-35119C0C99B9}.Release|x64.ActiveCfg = Release|x64
+		{2BA69C25-0B27-41C8-A7D1-35119C0C99B9}.Release|x64.Build.0 = Release|x64
+		{F4076DF1-1669-4FED-BD7F-9FA4534E2084}.Debug|x64.ActiveCfg = Debug|x64
+		{F4076DF1-1669-4FED-BD7F-9FA4534E2084}.Debug|x64.Build.0 = Debug|x64
+		{F4076DF1-1669-4FED-BD7F-9FA4534E2084}.Release|x64.ActiveCfg = Release|x64
+		{F4076DF1-1669-4FED-BD7F-9FA4534E2084}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C596FC7B-CCE2-479B-99FE-CCCC213D2B54}
+	EndGlobalSection
+EndGlobal
