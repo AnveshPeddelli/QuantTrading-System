@@ -98,6 +98,11 @@
     </ClCompile>
     <ClCompile Include="Trader.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Strategies\Strategies.vcxproj">
+      <Project>{aaf9d52a-2a8e-4613-b9e7-7e47d1d8eeab}</Project>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

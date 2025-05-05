@@ -8,5 +8,5 @@ enum Strategy
 	pairs_trading,
 	grid_trading,
 	time_based_scalping,
-	machineLearning_based_strategy;
+	machineLearning_based_strategy
 };

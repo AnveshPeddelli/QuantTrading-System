@@ -1,31 +1,44 @@
+#include "pch.h"
 #include "Trader.h"
 
-TRADER_API std::unique_ptr<iTrader> getTraderInstance()
+TRADER_API std::unique_ptr<iTrader> GetTraderInstance()
 {
-	
+	//Trader trader();
+	return std::make_unique<Trader>();
+}
+
+TRADER_API std::unique_ptr<iTrader> GetTraderInstance(long long capital, int strategy)
+{
+	//Trader trader();
+	return std::make_unique<Trader>(capital, strategy);
 }
 
 Trader::Trader()
 {
-	this->capital = 10000;
-	this->strategy = Strategy::moving_averages_crossover;
+	capital = 10000;
+	strategy = Strategy::moving_averages_crossover;
 }
 
-Trader::Trader(long long capital, int strategy)
+Trader::Trader(long long _capital, int _strategy)
 {
-	this->capital = capital;
-	this->strategy = strategy;
+	capital = _capital;
+	strategy = _strategy;
 }
 
 void Trader::setThresholds(int buyThreshold, int sellThreshold)
 {
-	this->buyThreshold = buyThreshold;
-	this->sellThreshold = sellThreshold;
+	buyThreshold = buyThreshold;
+	sellThreshold = sellThreshold;
 }
 
 long long Trader::getCapital()
 {
-	return this->capital;
+	return capital;
+}
+
+int Trader::getStrategy()
+{
+	return strategy;
 }
 
 void Trader::updateMarketData(double price)

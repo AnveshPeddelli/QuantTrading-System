@@ -11,6 +11,7 @@ public:
 
 	void setThresholds(int buyThreshold, int sellThreshold);
 	long long getCapital();
+	int getStrategy();
 	void updateMarketData(double price);
 	void executeTrade(double price);
 
